@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name = "regression"/>
+				<!--  
+				<exclude name = "QA"/>
+				 -->
+			</run>
+		</groups>
+		<classes>
+			<class name="assertions.AssertionTest" />
+			<class name="priority.PriorityTest" />
+			<class name="dependency.DependencyTest" />
+			<class name="demo_project.DemoProjectTest" />
+			<class name="group.DependsOnGroupTest" />
+			<class name="annotations.AnnotationTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
